@@ -23,12 +23,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 import React, { Component } from 'react';
-import loadable from '@loadable/component';
 import { connect } from 'react-redux';
 import { withRouter, Redirect } from 'react-router';
 import { Switch } from 'react-router-dom';
 import Loader from './component/Loader.jsx';
 import PublicRoute from './router/Public.jsx';
+import loadable from '@loadable/component';
 
 const Home = loadable(() => import('./container/Home.js'), {
   fallback: <Loader />
