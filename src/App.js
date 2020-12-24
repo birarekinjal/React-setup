@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { connect } from "react-redux";
-import { BrowserRouter as Router } from "react-router-dom";
-import Main from "./Main";
-import Loader from "./component/Loader.jsx";
+/* eslint-disable import/extensions */
+import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Main from './Main';
+import Loader from './component/Loader.jsx';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
