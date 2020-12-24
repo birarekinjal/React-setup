@@ -2,6 +2,7 @@
 import React from "react";
 
 const button = (props) => {
+    console.log("hi")
     const { buttonText, onClick, type, className, isDisabled } = props
     return (
         <button
