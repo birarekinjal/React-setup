@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
 
-//Demo
+// Demo
 // export const teamListMapper = {
 //   members: 'Total User',
 //   name: 'Team Name',
