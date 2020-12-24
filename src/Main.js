@@ -22,16 +22,16 @@
 /* eslint-disable import/extensions */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-import React, { Component } from "react";
-import { withRouter, Redirect } from "react-router";
-import { Switch } from "react-router-dom";
-import Loader from "./component/Loader.jsx";
-import loadable from "@loadable/component";
-import PublicRoute from "./router/Public.jsx";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import loadable from '@loadable/component';
+import { connect } from 'react-redux';
+import { withRouter, Redirect } from 'react-router';
+import { Switch } from 'react-router-dom';
+import Loader from './component/Loader.jsx';
+import PublicRoute from './router/Public.jsx';
 
-const Home = loadable(() => import("./container/Home.js"), {
-  fallback: <Loader />,
+const Home = loadable(() => import('./container/Home.js'), {
+  fallback: <Loader />
 });
 
 class Main extends Component {
@@ -42,7 +42,7 @@ class Main extends Component {
 
   render() {
     // const oldJwtToken = JSON.parse(localStorage.getItem('token'));
-    const oldJwtToken = "my-token";
+    const oldJwtToken = 'my-token';
 
     const route = (
       <Switch>
